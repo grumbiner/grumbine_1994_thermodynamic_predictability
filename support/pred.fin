@@ -1,0 +1,632 @@
+From wd21rg Tue Jun  8 10:25:53 1993
+Received: Tue, 8 Jun 93 10:24:53 EDT from sun15.nmc (sun15.wwb.noaa.gov) by sun1.wwb.noaa.gov (4.1/1.5)
+Date: Tue, 8 Jun 93 10:24:53 EDT
+From: Bob Grumbine <wd21rg>
+Message-Id: <9306081424.AA18838@sun1.wwb.noaa.gov>
+To: jo.jacka@antcrc.utas.edu.au, wd21rg
+Subject: Thermodynamic predictability revision
+Status: R
+
+
+  The revised text for my paper "Thermodynamic predictability of sea ice"
+is appended.  The 'et al.' have been changed to 'and others'.  Many of the 
+uses of we and our have been changed to first person.  In some of the 
+situations, though, I do mean a plural, either the reader and me, or other 
+people in the sea ice community and me.  In those cases I've left the plural.
+I was never pleased with the editorial 'we', but disliked even more the 
+passive tense.  The singular was something that I'd had the impression should 
+be avoided.
+
+Thanks,
+Bob Grumbine
+\documentstyle[12pt]{article}
+\textheight=9in
+\textwidth=6in
+\topmargin=-0.5in
+\oddsidemargin=+0.5in
+\renewcommand{\baselinestretch}{2.0}
+\begin{document}
+
+\title {The Thermodynamic Predictability of Sea Ice*}
+\author {Robert W. Grumbine \\
+National Meteorological Center \\
+Camp Springs, MD }
+\date {\today}
+\maketitle
+\begin{center}
+For submission to J. Glaciology   \linebreak
+*OPC Contribution number 64
+\end{center}
+\pagebreak
+\begin{center}
+Abstract
+\end{center}
+
+      Statistical analyses and model experiments suggest that the sea 
+ice cover is 
+predictable weeks to months in advance.  As such, it is one of the 
+most highly predictable components of the climate system.  I examine
+thermodynamic mechanisms by which this predictability can be realized.  
+I find that the predictability is dependent on the differential 
+growth/decay of sea ice as a function of thickness.  In winter or year-round
+for thin ice,
+the growth/decay rates are a strong function of thickness, which gives a
+relatively short period of predictability, though still long compared to
+the atmosphere.  In summer, or year-round for thick ice,
+growth/decay rates are only weak functions of thickness and the period
+of predictability is comparatively long.
+
+\pagebreak
+\section{Introduction}
+
+      Statistical analyses of sea ice prediction (ice edge location and
+area concentration) suggest that sea ice is predictable weeks and months in 
+advance, given present anomaly fields (deviations from climatology) for one 
+or more of the atmosphere, cryosphere, and hydrosphere 
+[Walsh and Johnson, 1979; Walsh, 1981; Chapman and Walsh, 1991; Marsden and others, 1991].
+Specific anomaly fields considered have included ice extent, surface salinity,
+50 m temperature, 400-600 m salinity [Marsden and others, 1991], ice area,
+sea surface temperature, 700 mb pressure field, and surface air temperature
+[Chapman and Walsh, 1991], surface temperature, and sea level
+pressure [Walsh, 1981], surface temperature, sea level pressure, 700 mb heights
+and temperatures [Walsh and Johnson, 1979].  The apparent successes of the
+statistical analyses suggest that model-based ice forecasting might be
+successful on similar time scales.  Determining how far into the future  
+such a forecast might be skillful (more accurate than climatology) is
+one purpose here.
+
+      An ice model experiment [Hibler and Walsh, 1982] finds a 
+significant correlation, 0.48, for a thermodynamics-only prediction 
+of the arctic ice
+edge location.  Adding dynamics increases the correlation to 0.58, which
+suggests that the dynamics are helpful but that much of the predictive skill
+lies with the thermodynamics.
+
+      I take an ice thermodynamics model to examine reasons for the
+predictability of sea ice.  Specific features I would like to understand
+are: why is the present ice anomaly a better predictor (provide a more
+accurate forecast than climatology for
+a longer period, more skillful) than atmospheric anomalies 
+[Walsh and Johnson, 1979; Walsh, 1981; Johnson and others, 1985]; why is 
+the time scale of prediction weeks, rather than days as it is for the
+atmosphere; and why is the time scale of predictability longer in the
+spring and summer melt season than the fall and winter freezing season.
+Since I take an incomplete physical model, rigorous answers to these
+questions are not possible.  I suggest, though, that if I find
+characteristics while examining the thermodynamic processes alone
+which are similar to the characteristics observed in nature, that nature is
+governed by thermodynamics in those situations.
+
+\section{Ice Thickness Distribution}
+
+      An ice pack is composed of many thicknesses of ice.  We prefer to
+treat the ice pack as a continuum, though, which means that we
+view the ice at a scale which is large compared to the size of individual floes.  
+Consequently, each region of the continuum also contains floes of 
+many different thicknesses.  Certain
+thermodynamic processes, such as the conduction of heat through the ice, 
+are sensitive to ice thickness.  So we need to track the fraction of the
+area of any region which is covered by ice of a given thickness.  This
+gives rise to the notion of an ice thickness distribution [Thorndike and others,
+1975], $g$(x,y,t;h).  The fraction of area centered at location x,y at 
+time t which is covered by ice between thickness h and h+dh is given 
+by $g$.  The ice thickness distribution will change due to thermodynamic effects
+(freezing and melting) and dynamical effects (ridging, rafting, crushing). 
+I will use only the thermodynamic part of the evolution equation
+for the ice thickness distribution as my basis for analysis in this study.
+
+      The thermodynamics-only ice thickness distribution evolution equation 
+is given by 
+
+\begin{equation}
+\frac {\partial g} {\partial t} + \frac {\partial fg} {\partial h}
+= 0
+\end{equation}
+
+\noindent after Thorndike and others [1975], but neglecting lateral ice freezing.
+f is the rate of freeze or melt, in meters per second, 
+of ice with thickness h. 
+
+      Consider the meaning of climatology in this context.  Climate refers
+to some typical annual cycles in both $g$ and f, which I will denote by 
+$\overline{g}$ and 
+$\overline{f}$.  I also require in the definition that: 
+
+\begin{equation}
+\frac {\partial \overline{g}} {\partial t} + \frac {\partial \overline{f}
+\overline{g}} {\partial h}
+= 0
+\end{equation}
+
+\noindent which includes the approximation that the mean of the products is equal to
+the product of the means.
+
+Anomalies in ice extent or coverage will appear as anomalies
+in $g$.  We then have $g$ = $\overline{g} + g'$, where $g'$ are the anomalies.   
+Atmospheric or oceanic anomalies, such as a warm summer or cold winter, will 
+contribute to $f'$.  
+Note that the anomalies from the atmosphere and ocean are only important
+to this model in so far as they affect the freezing or melting rate of the
+ice. 
+The freezing rate and ice thickness 
+perturbations are not necessarily small.  Near the ice edge they
+are always large (the climatic term is near zero).  In order to examine the
+physical processes which are most important, I will linearize equation  
+1.
+
+      Here, $\overline{f}$ is considered known, and is uncoupled from 
+the ice thickness distribution $g$.  So we lack nonlinear feedback which is 
+the element which usually limits predictability.  Consider instead the
+ice thickness distribution perturbation, $g'$.  If $g'$ is smaller than our
+ability to distinguish it from zero, and hence our ability to distinguish
+$g$ from $\overline{g}$, then we have lost predictability.  In this case,
+climatology is an equally good
+forecaster of the distribution as the model at this future time.  Conversely, consider
+an initial state which contains an unmeasurably small error.  If that
+perturbation grows large enough to be measurable, predictive skill is
+lost.
+
+      Now let us examine the perturbation equation derived by substituting
+$g$ = $\overline{g} + g'$ and $f$ = $\overline{f} + f'$ into equation 1, suggestively 
+rewritten, including both processes:
+
+\begin{equation}
+\frac {\partial{g'}} {\partial t} + 
+[ (\overline{f} + f') \frac {\partial g'} {\partial h} 
+     + f' \frac {\partial \overline{g}} {\partial h} ]
++ [ g' \frac {\partial (\overline{f} + f')} {\partial h}
+    + \overline{g} \frac {\partial f'} {\partial h}  ]
+= 0
+\end{equation}
+
+\noindent  where the identity from equation 2 has already been applied.
+The first bracketed term represents a one-dimensional wave 
+equation for the thickness distribution propagating through time and
+thickness.
+The first half gives the propagation speed of thickness anomalies, while 
+the second describes the perturbations due to a perturbed propagation rate of the
+climatological thickness distribution.  The wave-like nature of this term was
+discussed by Coon and others [1974].  The second bracketed term describes an 
+anomaly dissipation or growth term.  The first portion amplifies 
+(since $\partial f / \partial h$ is normally nonpositive) the 
+perturbation $g'$.  The second part of the term contributes 
+anomalies due to anomalous dispersion of the climatological thickness 
+distribution.
+
+      The wavelike term suggests high predictability.  Given $f'$ and
+$\overline{f}$, $g$ can be computed indefinitely into the future without
+$g'$ decaying or growing.  The purely propagating term has no
+means of amplifying or shrinking the perturbations.  For example, consider the
+thickness at which $g'$ is largest.  At that thickness ${\partial g'}/
+{\partial h} $ is zero.  So the advection is also zero, and the wave 
+term cannot change $g'$ at that location.
+
+      The second terms provide means for predictive skill to be lost.  The 
+second term within brackets provides a mechanism for $g'$ to grow through the 
+production of thickness anomalies due to anomalous dispersion of the
+climatological thickness distribution.  The first term within the second bracket
+provides a means of error growth through amplification of the perturbation
+in $g'$.  This perturbation means that there is excess or deficit area being 
+covered by ice between two thicknesses.  The thinner ice grows more
+rapidly than the thicker ice, so after some time, the same area
+of perturbation is confined into a narrower band of thicknesses.  $g'$
+must therefore be larger, because its integral over thickness must
+equal the same area for the perturbation as before the perturbed
+ice was allowed to grow.  The argument applies to melting as
+well, with the thicker ice melting more rapidly.
+The e-folding time for perturbation growth by this means is $|(\partial
+f/\partial h)|^{-1}$, which varies from hours to years depending on the
+thickness and season.  The concentration of the perturbation into an
+ever- smaller range of thicknesses can be thought of as a negative dispersion.
+
+\section{Predictability}
+
+      Now we can begin to address the question of why the ice edge location
+is more accurately forecast or accurately forecast further in to the future
+when using ice anomaly fields rather than atmospheric
+anomaly fields.  Consider a (finite) perturbation to the ice thickness
+distribution in the presence of a climatological atmosphere ($f'$ $\equiv$ 0).  
+The evolution of the perturbation will be
+
+\begin{equation}
+\frac {\partial g'} {\partial t} +
+\overline{f} \frac {\partial g'} {\partial h} +
+g' \frac {\partial \overline{f}} {\partial h}   = 0
+\end{equation}
+
+\noindent
+During the freezing season, $\overline{f}$ is positive, and decreases monotonically                               
+with h.  So ${\partial \overline{f}}/ {\partial h} $ is strictly negative and
+will amplify perturbations.  For illustrative purposes, I have used the ice 
+growth/decay model discussed in the next section to derive freezing and melting
+rates for winter and summer conditions respectively.  The freezing and melting 
+rates so derived are illustrated in figure 1.  The assumed winter and summer
+conditions are given in Table 1.
+For $\overline{f}$ proportional to $\alpha h^{-\beta}$,
+the approximate form of $\overline{f}$ found by curve-fitting the winter freezing rates
+illustrated in figure 1, the e-folding period is $h^{1+\beta}/(\alpha\beta)  $.
+Typical values are $\alpha$=1.37 and $\beta$=0.82, where time is in days,
+and thickness is in cm.
+Note that the length of predictive skill increases rapidly for increasingly 
+thick ice.  Under a climatological atmosphere, the ice thickness distribution 
+adjustment time scale is about 20 hours for 10 cm thick ice, 64 hours
+for 20 cm ice, 
+ 20 days for 60 cm thickness, and 1.3 years for 3 meter thick ice.
+The latter thicknesses correspond to mean thicknesses of the Antarctic 
+[Wadhams and others, 1987] and Arctic [Bourke and Garrett, 1987] respectively.
+
+      Now consider the early (i.e. linearizeable) growth of perturbations
+to the sea ice thickness distribution due to freezing rate anomalies.
+
+\begin{equation}
+\frac {\partial g'} {\partial t} + \frac {\partial g' \overline{f}}
+  {\partial h} = - \frac {\partial f' \overline{g}} {\partial h}
+\end{equation}
+
+\noindent  
+The growth of the ice thickness anomalies, $g'$, is accomplished through 
+either negative dispersion of the perturbation
+with respect to thickness (the second term in equation 5), or by 
+anomalous propagation and dispersion of the climatological thickness
+distribution (the third term).  The equilibrium response in $g'$ to an anomaly in freezing is
+$g'$ = (-$f'$/$\overline{f}$) $\overline{g}$ + C where C is a constant of 
+integration which I will take to be zero to satisfy area conservation.  
+For sufficiently small $f'$, $g'$ is never
+large.  Also, for $\overline{g}$ small, $g'$ is also constrained to be
+small.  The only time or place that $g'$ may be large is when $f'$ is large and
+$\overline{f}$ is small, namely where the deviation from
+climatological freezing rates is large, and the climatological freezing rate
+itself is small.  This places us in the marginal ice zone during a
+time of anomalously cold weather.  In the
+interior ice pack, then, freezing rate anomalies are usually unable to produce
+large anomalies in ice thickness distribution ($g$ is large, but $f'$ is thickness
+dependent, decreasing with thickness, and the thickness is large.)
+
+      Now consider the relative roles of $f'$ and $\overline{f}$.  
+$f'$ acts to introduce anomalies into the
+ice thickness distribution by perturbing the climatological cycle of 
+ice growth and decay.  Once an ice thickness anomaly is produced, the
+climatological freezing rates propagate the change through thickness at
+a rate f, and concentrate it into an increasingly narrow thickness 
+range at a rate proportional to $|(\partial \overline{f} / \partial h)|^{-1}$.  
+This allows us to answer the question of why a present ice anomaly field is 
+a more skillful ice predictor than the atmospheric anomaly is.  The amplification
+of an anomaly in the ice distribution occurs on a time scale of 
+$|(\partial \overline{f} / \partial h)|^{-1}$.  The production of an
+ice thickness distribution anomaly, on the other hand, occurs on the 
+time scale of $|(\partial f' / \partial h)|^{-1}$,  which will generally
+exceed the amplification period.  
+If we already know that the thickness distribution is perturbed (again,
+thick ice will be most important), this distribution can be predicted well  
+into the future as we now start with $g'$ being zero and can successfully
+compute the thickness distribution out to a time when the anomalous
+freezing rates have produced a significant perturbation.   
+The instantaneous state of the atmosphere is only predictable for a couple
+of weeks,
+while anomalies in ice cover concentration ice persist for up to a year 
+[Marsden and others, 1991].  
+
+      We also see from figure 1 why there is greater predictability
+in the melt season than the freezing season.  Figure 1 presents melting 
+and freezing rates as a function of thickness for summer and winter;
+physical parameters are given in Table 1.  
+The melt rate is far less
+dependent on thickness than the freezing rate is.  Except for ice thinner 
+than, say, 50 cm, the freezing rate is essentially thickness independent.
+Figure 2 presents
+$|({\partial f}/{\partial h} )|^{-1}$  for summer and winter 
+conditions, which is far larger in summer than winter.  For summer melt
+rates the predictive scale for 60 cm ice
+is 2.2 years, and 361 years for 3 meter thick ice, as opposed to 20 days 
+and 1.3 years in freezing, respectively.  The summer predictive   
+time scale is far longer than the time required to melt all the ice 
+(or for summer to end).  So the thermodynamics
+do not limit predictive skill in the summer or for the thickest ice 
+in winter.
+
+      Ocean anomalies, such as an anomalously low salinity or warm upper layer,
+affect predictability only indirectly.  The contribution of the ocean to
+the ice heat balance, and hence freezing/melting rates, is thickness
+independent.  So the ocean makes no contribution to the dispersion term.  
+The ocean can affect predictability by acting to produce thicker or thinner
+ice.  As already seen, thinner ice is less predictable.  So if the ocean
+were warmer, giving rise to a thinner ice cover, the predictability
+period for the ice would be decreased.  The quantity of interest here 
+is the heat flux from the ocean to the ice.
+
+      From our analysis of anomaly preservation, a predictive time scale of 
+several weeks [Walsh and Johnson, 1979; Walsh, 1981; Chapman and Walsh,
+1991; Marsden and others, 1991] suggests that the most important
+ice is thick, over, say, 50 cm (2 week winter predictability).  Both Arctic 
+and Antarctic ice packs have a wintertime mean thickness greater than this,
+which corroborates our expectation.
+
+\section {Freezing Rate Sensitivity to the Atmosphere and Ocean}
+
+      A closer examination of the ice thermodynamics is now in order.
+  Figure 3 illustrates 
+the thermodynamic terms involved in ice floe freezing and melting. 
+The
+formulation of the thermodynamics follows the zero-level version of Semtner's
+[1976] solution, except that penetrating shortwave radiation is used to
+melt the ice as a whole, rather than in forming an internal energy store.
+
+      In the winter (freezing conditions), the ice surface fluxes are 
+forced to sum to
+zero by adjusting the surface temperature to provide flux balance.  
+The contributing fluxes are: sensible heat flux (H), latent 
+heat flux (LE), conductive heat flux (K), downwelling longwave radiation flux
+(LW$\downarrow$), upwelling longwave radiation flux (LW$\uparrow$), and 
+absorbed shortwave radiation flux
+(SW$_{net}$).  We formulate the fluxes as:
+
+\begin{equation}
+H = \rho_a  U_a C_h C_p (T_s - T_a)
+\end{equation}
+
+\begin{equation}
+LE = \rho_a U_a C_q L_v (q_s(T_s) - q_{10}(T_a))
+\end{equation}
+
+\begin{equation}
+K = -k_sk_i (T_f - T_s) / (k_s H_i + k_i H_s)
+\end{equation}
+
+\begin{equation}
+LW\downarrow = -(0.7855+0.2232 C^{2.75}) \epsilon_i \sigma T_a^4
+\end{equation}
+
+\begin{equation}
+LW\uparrow = \epsilon_i \sigma T_s^4
+\end{equation}
+
+\begin{equation}
+SW_{net} = -(1-\alpha)SW\downarrow(1-I_0exp(-(H_s\tau_s + H_i\tau_i)))
+\end{equation}
+
+\noindent  where k$_s$ and k$_i$ are the thermal conductivities of snow and 
+ice, respectively, H$_s$ and H$_i$ are the thickness of snow and ice, respectively,
+T$_f$ is the freezing temperature of sea water, T$_s$ is the surface temperature
+of the floe, C$_h$ is the bulk transfer coefficient for sensible heat, C$_q$
+is the bulk transfer coefficient for latent heat, U$_a$ is the atmospheric
+wind speed at 10 meters, C$_p$ is the specific heat of air, 
+L$_v$ is the latent heat of
+vaporization of ice, q$_s$ is the saturation water vapor content at 
+temperature T$_s$,
+q$_{10}$ is the actual water vapor content at 10 meters, $\epsilon$ is the 
+longwave
+emissivity of the surface (snow or ice), C is the cloud cover fraction,
+$\alpha$ is the surface albedo,
+SW$\downarrow$ is the downwelling shortwave radiation flux, I$_0$ is the
+fraction of incident solar radiation which penetrates the surface, 
+and $\tau_s$ and 
+$\tau_i$ are the shortwave extinction coefficients for snow and ice,
+respectively.  The longwave downwelling
+flux relation is the empirical relation due to Maykut and Church [1973].
+I take the convention that fluxes are positive away from the ice.
+
+      The freezing rate (meters per second of ice thickening) is given by
+[Semtner, 1976]:
+
+\begin{equation}
+f = \frac {\partial H_i} {\partial t} = ( -F_w + 
+ k_sk_i (T_f - T_s) / (k_s H_i + k_i H_s)      ) / (\rho_i L_f)
+\end{equation}
+
+\noindent where F$_w$ is the oceanic heat flux into the ice.  Note that this
+may produce basal melting when the conduction is slow, either because of thick
+snow and ice, or because of warm surfaces.
+In summer T$_s$ is limited to the freezing point
+of the ice, and an excess flux into the ice results.  This flux is balanced
+by increased melting:
+
+\begin{equation}
+f = \frac {\partial H_i} {\partial t} = (-F_w + Q_{extra} ) / (\rho_i L_f)
+\end{equation}
+
+\noindent where Q$_{extra}$ is the sum of the surface flux terms at T$_s$=T$_f$.
+The thermodynamic picture used here is not strictly accurate in the 
+freezing season for ice thinner than about 50 cm, or in the summer 
+melt season.
+Under these conditions, certain mechanical processes (rafting of small
+floes and formation of brine channels and subsequent mechanical breakup)
+have potentially significant effects on the ice physics [Maykut, 1986]. 
+Nonetheless, the larger scale considerations of thermodynamics
+do apply, in that even though brine channeling may permit melt without
+changing the thickness of the ice, the volume of ice melted still 
+corresponds to that which would be expected thermodynamically.
+Values of the constants are given in Table 1.
+
+      Equations 12 and 13 give the freezing or melting rate (f) after
+T$_s$ has been determined from equations 6 to 11.  Our main interest
+in terms of sea ice predictability is $|(\partial f/\partial h)|^{-1}$.  
+For winter, after differentiating equation 12 with respect to H$_i$, and 
+recalling that the surface temperature can depend on ice thickness, we find
+
+\begin{equation}
+(\frac {\partial f} {\partial h})^{-1} = 
+-\frac {\rho_iL_f(k_sH_i+k_iH_s)} {k_sk_i}
+[ \frac {(T_f-T_s)k_s} {k_sH_i+k_iH_s} + \frac {\partial T_s} {\partial H_i}]^{-1}
+\end{equation}
+
+\noindent where:
+
+\begin{equation}
+\frac {\partial T_s} {\partial H_i}
+= \frac 
+{[ \frac {(T_f-T_s)k_s^2k_i} {(k_sH_i+k_iH_s)^2} 
+  -(1-\alpha)SW\downarrow I_0 \tau_i exp(-(H_s\tau_s+H_i\tau_i) ) ]  }
+{\frac {-k_sk_i} {(k_sH_i+k_iH_s)} + 
+\rho_a C_q L_v U_a \frac{\partial q_s}{\partial T_s}
+\rho_a C_D C_p U_a + 4\epsilon \sigma T_s^3                 }
+\end{equation}
+
+\noindent  The salient feature of equation 15 
+is that the ice surface cools for thicker ice.  Therefore the ice freezing rate
+is less dependent on thickness than if T$_s$ were thickness independent.
+This gives a longer period of predictability. In the summer, T$_s$ is fixed by
+the freezing point, so the $\partial$f/$\partial$h is given by:
+
+\begin{equation}
+(\frac {\partial f} {\partial h} )^{-1} = 
+\rho_i L_f (\frac {\partial Q_{extra}} {\partial h})^{-1}
+\end{equation}
+
+\noindent where:
+\begin{equation}
+\frac {\partial Q_{extra}} {\partial h} = -(1-\alpha)SW\downarrow I_0 \tau_i 
+exp(-(h_s\tau_s+h_i\tau_i))
+\end{equation}
+
+\noindent so we see that in summer the only dependence of melt rate on
+ice/snow thickness comes about from the additional shortwave radiation
+absorbed by thicker ice.  Since $\partial Q / \partial h $ 
+is an exponential function of thickness,
+it is only for thin ice that the melt rate becomes sensitive to thickness.
+Hence, the summer ice has an extremely long predictability period.   
+Returning to figure 2 shows that the period estimated for predictability
+is longer than the period required to melt the entire floe under 
+the presumed conditions.
+
+\section{Discussion}
+
+     This analysis suggests answers to some questions which are important to 
+understanding and forecasting sea ice conditions.  First, it is apparent from 
+prior work that the time scale of sea ice anomaly persistence is weeks to 
+months [Walsh and Johnson, 1979; Walsh 1981; Chapman and Walsh, 1991; 
+Marsden and others, 1991].  We see here that this is expected for regions of 
+thick ice, as this ice can respond only slowly to atmospheric anomalies.  The 
+length of ice anomaly persistence is longer in the melt season than in the 
+freezing season because the freezing process is more thickness dependent than 
+melting (larger df/dh).  The relative ease with which ice anomalies (once 
+formed) are predicted suggests that statistical forecasting models such as 
+autoregressive models of ice anomalies are liable to be more accurate than 
+climatology for longer lead times than a regression of the ice anomaly 
+based on past atmospheric anomalies, in accord with experience
+[Walsh and Johnson, 1979; Walsh, 1981; Johnson and others, 1985].
+
+      Another feature of operational interest is that given knowledge of 
+the atmosphere, we can also estimate the period for which an ice thickness
+forecast may be expected to be better than climatology due to thermodynamics.  
+The estimates are high, years in the summer versus the weeks inferred by 
+studies [c.f. Chapman and Walsh, 1991; Marsden and others, 1991; Walsh, 1981; 
+Walsh and Johnson, 1979].  The likely candidate for the discrepancy is the 
+absence of dynamics in my analysis.  For a large scale ice pack,
+convergence is on the order of 10$^{-2}$ day$^{-1}$ [Coon and others, 1974],  
+which
+corresponds to a 100 day predictability limit.  This limit is reached by ice
+thicknesses of 10 cm in the summer and 1.36 meters in the winter.  So,
+I suggest that these are the conditions which contribute
+to the observed characteristics of sea ice predictability.
+      
+      Ice dynamics are definitely an important element in ice prediction.  
+In the long term and large scale, dynamics limit the prediction range.  At
+small scales and short range, when divergence can be much larger, dynamics
+again limit prediction range.  Further, via ridging, dynamics will affect
+the ice thickness distribution -- removing ice from thin classes and pushing
+it into thick classes.
+
+      The thermodynamic limit on predictability will be an important consideration
+for predicting thin ice in the melt season, or with new, young, or
+first year ice in the winter.  For operational ice prediction, this
+suggests that forecast range in the winter is limited by the ability to 
+predict the freezing of thinner ice.  The next step in this work will be to
+examine the combined effects of dynamics and thermodynamics on ice 
+predictability.  
+
+
+\begin{center}
+Acknowledgements
+\end{center}
+
+      I would like to thank D. B. Rao, V. M. Haliburton, L. Breaker, 
+W. Gemmill, and G. Wohl for their assistance in preparing this paper.  
+
+\pagebreak
+\begin{center}
+Figure Captions
+\end{center}
+
+Figure 1.  Freezing rate in cm day$^{-1}$ as a function of thickness in meters
+for winter (upper curve) and summer (lower curve).
+
+Figure 2.  e-folding period in days of errors in the ice thickness distribution
+as a function of ice thickness in m.  Upper curve is for summer conditions,
+lower curve is for winter conditions.
+
+Figure 3.  Diagram of ice thermodynamic variables.  H is the sensible heat 
+flux, LE is the latent head flux, LW is the long-wave heat flux to the ice,
+$\epsilon_i \sigma T_S^4$ is the long-wave energy flux away from the ice, SW
+is the downwelling shortwave energy, $\alpha$ is the albedo, I$_0$ is the
+fraction of the shortwave energy which penetrates the surface, $\beta_s$ is
+the fraction of downwelling shortwave energy which is absorbed in the snow
+layer (if any), $\beta_i$ is the fraction of downwelling shortwave energy
+which is absorbed in the ice, and FW is the heat flux from the ocean to the
+ice.  Energy fluxes are measured negative towards the ice.
+
+\pagebreak
+\begin{center}
+Bibliography
+\end{center}
+
+Bourke, R. H. and R. P. Garrett  Sea ice thickness distributions in the
+  Arctic {\it Cold Regions Science and Technology}, {\bf13}, 259-280, 1987.
+
+Chapman, W. L. and J. E. Walsh  Long range prediction of regional sea 
+  ice anomalies in the Arctic  {\it Weather and Forecasting},
+  {\bf6}, 271-288, 1991.
+
+Coon, M. D., G. A. Maykut, R. S. Pritchard, D. A. Rothrock, A. S. Thorndike
+  Modeling the Pack Ice as an elastic-plastic material  {\it AIDJEX Bull.},
+  {\bf24}, 1-105, 1974.
+
+Grenfell, T. C. and G. A. Maykut  The optical properties of ice and 
+  snow in the Arctic basin {\it J. Glaciol.}, {\bf18}, 445-469, 1977.
+
+Hibler, W. D. III and J. E. Walsh  On modeling seasonal and interannual
+  fluctuations of Arctic sea ice  {\it J. Phys. Oceanogr.}, 
+  {\bf12}, 1514-1523, 1982.
+
+Johnson, C. M., P. Lemke, and T. P. Barnett  Linear prediction of sea 
+  ice anomalies. {\it J. Geophys. Res.}, {\bf90}, 5665-5675, 1985.
+
+Marsden, R. F., L. A. Mysak, and R. A. Myers  Evidence for stability 
+  enhancement of sea ice in the Greenland and Labrador Seas  
+  {\it J. Geophys. Res.}, {\bf96}, 4783-4789, 1991.
+
+Maykut, G. A.  The surface heat and mass balance, in The Geophysics of 
+  Sea Ice, N. Untersteiner, ed., Plenum, NY, pp. 395-463, 1986.
+
+Maykut, G. A.  Energy exchange over young sea ice in the central Arctic
+  {\it J. Geophys. Res.}, {\bf83}, 3646-3658, 1978.
+
+Maykut, G. A. and P. E. Church  Radiation climate of Barrow, Alaska, 1962-66
+  {\it J. Appl. Met.}, {\bf12}, 620-628, 1973.
+
+Maykut, G. A. and N. Untersteiner  Some results from a time-dependent 
+  thermodynamic model of sea ice  {\it J. Geophys. Res.}, {\bf76}, 1550-1575, 1971
+
+Parkinson, C. L. and W. M. Washington  A large scale numerical model
+  of sea ice  {\it J. Geophys. Res.}, {\bf84}, 311-337, 1979.
+
+Semtner, A. Jr.  A model for the thermodynamic growth of sea ice in 
+  numerical investigations of climate  {\it J. Phys. Oceanogr.}
+  {\bf16}, 379-389, 1976.
+
+Thorndike, A. S., D. A. Rothrock, G. A. Maykut, and R. Colony  The thickness
+distribution of sea ice.  {\it J. Geophys. Res.}, {\bf80}, 4501-4513, 1975.
+
+Wadhams, P. M. A. Lange, and S. F. Ackley  The ice thickness distribution
+across the Atlantic sector of the Antarctic ocean in midwinter.  
+{\it J. Geophys. Res.}, {\bf92}, 14,535-14,552, 1987.
+
+Walsh, J. E.  Empirical orthogonal functions and the statistical 
+  predictability of sea ice extent  in Sea ice processes and models  
+  R. S. Pritchard, ed.  pp. 373-384, 1981.
+
+Walsh, J. E. and C. M. Johnson  Interannual variability and associated 
+  fluctuations in arctic sea ice extent  {\it J. Geophys. Res.},
+  {\bf84}, 6915-6928, 1979.
+
+\end{document}
+

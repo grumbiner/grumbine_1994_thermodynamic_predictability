@@ -1,0 +1,1 @@
+1244"DEFAULT" "DEFAULT" 84 15.000e-001 3.000e+000 9.000e+001 1.500e-00110 18 "Growth Rate cm/day"

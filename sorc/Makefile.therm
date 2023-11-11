@@ -1,0 +1,38 @@
+FC = gfortran -c 
+LD = gfortran
+
+f0    : f0.o initf0.o f0grow.o f0temper.o f0tempo.o forcing.o albedo.o arset.o w3fa09.o Makefile
+	$(LD) f0.o initf0.o f0grow.o f0temper.o f0tempo.o forcing.o albedo.o arset.o w3fa09.o -o $(@)
+
+therm : therm.o inittherm.o grower.o temper.o Makefile 
+	$(LD) therm.o inittherm.o grower.o temper.o -o $(@)
+
+clean :
+	rm *.o 
+
+therm.o   : therm.f Makefile
+	$(FC) therm.f
+inittherm.o   : inittherm.f physical.inc Makefile
+	$(FC) inittherm.f
+grower.o : grower.f Makefile
+	$(FC) grower.f
+temper.o : temper.f Makefile
+	$(FC) temper.f
+
+f0.o   : f0.f Makefile
+	$(FC) f0.f
+initf0.o   : initf0.f physical.inc Makefile
+	$(FC) initf0.f
+f0grow.o : f0grow.f Makefile
+	$(FC) f0grow.f
+f0temper.o : f0temper.f Makefile
+	$(FC) f0temper.f
+albedo.o : albedo.f 
+	$(FC) albedo.f
+forcing.o : forcing.f Makefile
+	$(FC) forcing.f
+arset.o : arset.f
+	$(FC) $<
+w3fa09.o : w3fa09.f
+	$(FC) $<
+

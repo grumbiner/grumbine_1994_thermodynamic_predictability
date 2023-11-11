@@ -1,0 +1,171 @@
+\documentstyle[12pt]{article}
+\textwidth=7.0in
+\oddsidemargin=-0.5in
+\begin{document}
+
+\begin{center}
+Table 1. Magnitude of thermodynamic terms over the ocean and over sea ice.
+\linebreak In units of W m$^{-2}$.
+
+\begin{tabular}{ccc}
+&&\\
+Term & Size - Ice & Size - Water\\
+\hline
+\hline 
+
+SW $\downarrow$ & 0-350 & 0-350 \\
+SW $\uparrow$   & 200   & 35 \\
+LW $\uparrow \downarrow $ & 250 & 250 \\
+Internal SW & 0-150 & 0-315 \\
+
+& & \\
+
+H & 2-200 & 200 \\
+Conduction & 2-300 & 2-30 \\
+FW $\uparrow$ & 2-30 & 2-30 \\
+LE $\uparrow$ & 2?  & 2? \\
+\hline
+
+\end{tabular}
+\end{center}
+
+\pagebreak
+\begin{center}
+Table 2.  Albedo representation for different sea ice and snow states
+\linebreak 
+(Shine and Henderson-Sellers, 1985).
+
+\begin{tabular}{llll}
+&&&\\
+Albedo Class    & Symbol &    Value\\
+\hline
+\hline
+
+Dry Snow        &   $ \alpha_d  $ &    0.80\\
+Thick Melting Snow& $ \alpha_m  $ &    0.65\\
+Thin Melting Snow&  $\alpha_{mb}$ &  $\alpha_b + (h_s/0.10)
+                                   (\alpha_m-\alpha_b)$ \\
+Bare Puddled Ice&   $\alpha_b  $   &    0.53 \\
+Bare Frozen Ice &   $\alpha_{bf}$  &    0.72 \\
+
+Thin Forming Ice &  $\alpha_{btf}$ &  
+ $\alpha_{btm}$ & $0.0 \leq h_i \leq 1.0$ \\
+& & $0.472 + 2.0(\alpha_{bf} - 0.472)(h_i -1.0)$ 
+& $1.0 \leq h_i \leq 1.5$ 
+\\
+
+Thin Melting Ice &  $\alpha_{btm}$ &
+$0.472 + 2.0(\alpha_b-0.472)(h_i-1.0)$ & 
+    $ 1.0 \leq h_i \leq 1.5 $ \\
+& & $0.2467 + 0.7049 h_i - 0.8608 h_i^2 + 0.3812 h_i^3$ &
+    $ 0.05 \leq h_i \leq 1.0$  \\
+& & $ 0.1 + 3.6 h_i$ & $h_i \leq 0.05$ \\
+
+Thin Snow On Frozen Ice&  $ \alpha_{df}$ &
+$\alpha_d$ & $h_i \geq 0.05$ \\
+& & $\alpha_{btf} + (h_s / 0.05) (0.8 - \alpha_{btf} )$ & $h_s \leq 0.05$ ;
+    $ h_i \leq 1.5$ \\
+& & $\alpha_{bf} + (h_s / 0.05) (0.08 - \alpha_{bf}$ &$ h_s \leq 0.05 $ ;
+    $ h_i \geq 1.5$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+\begin{center}
+Table 3.  Precision required in forcing terms for desired accuracy in
+forecast ice motion.
+\begin{tabular}{ccccccc}
+&&&&&&\\
+                 & Drift& Rule&      & & Force  \\
+Precision (1 wk) & U$_A$ & P (Pa) &
+      H$_{topo}$ (cm) & f & U$_{A}$ (5 m/s) & U$_{O}$ (10 cm/s) \\
+\hline
+\hline
+1 km & 0.2 & 3 & 0.22 & 2\% & $\pm$0.02 & $\pm$ 0.08 \\
+25 km & 5 & 80 & 5.3 & 40\% & $\pm$0.40 & $\pm$ 2.3 \\
+Operational & 2? & 200? & 10? & --- & 2? & not \\
+\hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+Table 4.  Required accuracy in thermodynamic fluxes to predict the 
+growth of thin (10 cm) and thick ice (1 m) in W m$^{-2}$, and the
+relative magnitude of this flux compared with the size of individual
+elements in the total flux. $\alpha$ is the albedo, LW is the longwave
+flux, FW is the ocean-supplied heat flux, K$_{thin}$ is the thermal
+conduction through thin ice, K$_{thick}$ is the thermal conduction 
+through thick ice, and S$_{thin, thick}$ is the thermal conduction 
+through thin or
+thick ice with a 10 cm layer of snow.
+\begin{center}
+\begin{tabular}{llllllllll}
+&&&&&&&&&\\
+Time & Thin & Thick & $\alpha_{thin}$ & 
+     LW$_{Thin}$ &  FW$_{Thin}$ & K$_{Thin}$ & K$_{Thick}$  
+                                & S$_{Thin}$ & S$_{Thick}$\\
+\hline
+\hline
+Week & 50 & 500 & 0.14 & 0.25 &  --- &  0.125 & --- & 1.0 & --- \\
+Month & 11 & 110 & 0.032 &0.05 &  1.0 & 0.025 & --- & 0.2 & ---\\
+Year & 1 & 10 & 0.003 & 0.005 &  0.1 &  0.0025 & 0.25 & 0.02 & 0.4 \\
+\hline
+Observation &&&&&&&&\\
+Model &&&&&&&&\\
+\hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+\begin{center}
+Table 5.  Research and operations time lines.
+
+\underline{Time Line - Research}
+\begin{tabular}{cll}
+Year & Scientist & Physics \\
+\hline
+\hline
+1902 & Nansen & Drift Rule - Arctic \\
+1945 & Zubov & Drift Rule - Arctic \\
+&& Empirical Ice Thickness \\
+1965 & Skiles & Drift Rule - Arctic \\
+1965 & Campbell & Viscous Ice Pack Rheology \\
+1971 & Maykut and Untersteiner & Detailed Floe Thermodynamics \\
+1975 & Thorndike et al. & Ice Thickness Distribution Theory \\
+1976 & Semtner & Simplified Floe Thermodynamics \\
+1979 & Hibler & Viscous-Plastic Ice Rheology\\
+1980 & Hibler & Ice Thickness Distribution Application \\
+1982 & Thorndike and Colony & Drift Rule - Arctic \\
+1983 & Smith & Ice Rheology Reconsidered \\
+&& --- Hibler 1979 is nonphysical\\
+1984 & Hibler and Bryan & Coupled Ice-Ocean with 1980 Hibler Ice \\
+1987 & Semtner & Coupled Ice-Ocean with simplified rheology \\
+1988 & Overland and Pease & Local Scale ice rheology\\ 
+&& --- derived following Smith-like guidelines\\
+&& Coupled to ocean \\
+1990 & Martinson and Wamser & Drift Rule - Antarctic \\
+\hline
+&&\\
+&&\\
+\end{tabular}
+
+
+\underline{Time Line - Operational Objective}
+\begin{tabular}{cclc}
+Period & Site & Physics& Year \\
+\hline
+\hline
+?-Present & NMC & Skiles Drift Rule & 1965\\
+1965-1983 & FNOC & Skiles Drift Rule & 1965 \\
+1975-?    & FNOC & Zubov Thermodynamics & 1945 \\
+1983-1987 & FNOC & Thorndike and Colony Drift Rule & 1982 \\
+1987-present & FNOC & Hibler Rheology & 1980\\
+&&                    Semtner Thermodynamics & 1976\\
+10/92 Schedule & FNOC & Hibler-Bryan Coupled Ice-Ocean & 1984 \\
+\hline
+
+\end{tabular}
+\end{center}
+
+\end{document}
